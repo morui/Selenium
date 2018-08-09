@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-TestSuite">
+              <span class="suite-name border-failed">TestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-TestSuite">
+                    <span>C:\iLab_Assessment_Selenium\Workspace\TestApplication\JobApplicationSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-TestSuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-TestSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-TestSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-TestSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-TestSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-TestSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestSuite" class="hide-methods failed suite-TestSuite"> (hide)</a> <!-- hide-methods failed suite-TestSuite -->
+                      <a href="#" panel-name="suite-TestSuite" class="show-methods failed suite-TestSuite"> (show)</a> <!-- show-methods failed suite-TestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-TestSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.iLab.assessment.JobApplication" hash-for-method="applyJob(Mamphofore, automationAssessment@iLABQuality.com)">applyJob(Mamphofore, automationAssessment@iLABQuality.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestSuite" class="hide-methods passed suite-TestSuite"> (hide)</a> <!-- hide-methods passed suite-TestSuite -->
+                      <a href="#" panel-name="suite-TestSuite" class="show-methods passed suite-TestSuite"> (show)</a> <!-- show-methods passed suite-TestSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-TestSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.iLab.assessment.JobApplication" hash-for-method="gotoHomePage(Home Page - iLAB, CAREERS - iLAB, http://www.ilabquality.com/)">gotoHomePage(Home Page - iLAB, CAREERS - iLAB, http://www.ilabquality.com/)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.iLab.assessment.JobApplication" hash-for-method="selectJob">selectJob</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TestSuite" class="panel TestSuite">
+          <div class="suite-TestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.iLab.assessment.JobApplication</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="applyJob(Mamphofore, automationAssessment@iLABQuality.com)">
+                  </a> <!-- applyJob(Mamphofore, automationAssessment@iLABQuality.com) -->
+                  <span class="method-name">applyJob</span>
+                  <span class="parameters">(Mamphofore, automationAssessment@iLABQuality.com)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;applicant_name&quot;}
+Command duration or timeout: 2.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;U188122707&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a41c5ad4-8dcc-4e74-afb2-5916eb118e4b
+*** Element info: {Using=id, value=applicant_name}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.clear(Unknown Source)
+	at com.iLab.assessment.ApplicationPage.populateForm(ApplicationPage.java:69)
+	at com.iLab.assessment.JobApplication.applyJob(JobApplication.java:46)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;applicant_name&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;U188122707&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ntabanmj/AppData/Local/Temp/anonymous3372624887000471427webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/ntabanmj/AppData/Local/Temp/anonymous3372624887000471427webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-failed -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.iLab.assessment.JobApplication</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="gotoHomePage(Home Page - iLAB, CAREERS - iLAB, http://www.ilabquality.com/)">
+                  </a> <!-- gotoHomePage(Home Page - iLAB, CAREERS - iLAB, http://www.ilabquality.com/) -->
+                  <span class="method-name">gotoHomePage</span>
+                  <span class="parameters">(Home Page - iLAB, CAREERS - iLAB, http://www.ilabquality.com/)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectJob">
+                  </a> <!-- selectJob -->
+                  <span class="method-name">selectJob</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+        </div> <!-- panel TestSuite -->
+        <div panel-name="test-xml-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\iLab_Assessment_Selenium\Workspace\TestApplication\JobApplicationSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;TestSuite&quot;&gt;
+  &lt;parameter name=&quot;base-url&quot; value=&quot;http://www.ilabquality.com/&quot;/&gt;
+  &lt;parameter name=&quot;author&quot; value=&quot;Mamphofore Ntabane&quot;/&gt;
+  &lt;parameter name=&quot;browserType&quot; value=&quot;firefox&quot;/&gt;
+  &lt;test name=&quot;JobApplication&quot;&gt;
+    &lt;parameter name=&quot;homeTitle&quot; value=&quot;Home Page - iLAB&quot;/&gt;
+    &lt;parameter name=&quot;name&quot; value=&quot;Mamphofore&quot;/&gt;
+    &lt;parameter name=&quot;careerTitle&quot; value=&quot;CAREERS - iLAB&quot;/&gt;
+    &lt;parameter name=&quot;email&quot; value=&quot;automationAssessment@iLABQuality.com&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.iLab.assessment.JobApplication&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- JobApplication --&gt;
+&lt;/suite&gt; &lt;!-- TestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">JobApplication (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TestSuite');
+function tableData_TestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'gotoHomePage')
+data.setCell(0, 2, 'com.iLab.assessment.JobApplication')
+data.setCell(0, 3, 84159);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'selectJob')
+data.setCell(1, 2, 'com.iLab.assessment.JobApplication')
+data.setCell(1, 3, 7513);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'applyJob')
+data.setCell(2, 2, 'com.iLab.assessment.JobApplication')
+data.setCell(2, 3, 4290);
+window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-TestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-TestSuite">
+              </div> <!-- times-div-TestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.iLab.assessment.JobApplication</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(org.testng.TestRunner@5c2375a9)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">applyJob(Mamphofore, automationAssessment@iLABQuality.com)</span>
+                <span class="method-start">5848 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">gotoHomePage(Home Page - iLAB, CAREERS - iLAB, http://www.ilabquality.com/)</span>
+                <span class="method-start">10152 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">selectJob</span>
+                <span class="method-start">94312 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">101829 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

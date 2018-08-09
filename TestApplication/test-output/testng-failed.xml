@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]">
+  <parameter name="base-url" value="http://www.ilabquality.com/"/>
+  <parameter name="author" value="Mamphofore Ntabane"/>
+  <parameter name="browserType" value="firefox"/>
+  <test name="JobApplication(failed)">
+    <parameter name="homeTitle" value="Home Page - iLAB"/>
+    <parameter name="name" value="Mamphofore"/>
+    <parameter name="careerTitle" value="CAREERS - iLAB"/>
+    <parameter name="email" value="automationAssessment@iLABQuality.com"/>
+    <classes>
+      <class name="com.iLab.assessment.JobApplication">
+        <methods>
+          <include name="tearDown"/>
+          <include name="applyJob" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.iLab.assessment.JobApplication -->
+    </classes>
+  </test> <!-- JobApplication(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

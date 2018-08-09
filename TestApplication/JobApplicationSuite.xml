@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="3" >
+<parameter name="browserType" value="firefox" />
+<parameter name="base-url" value="http://www.ilabquality.com/"></parameter>
+<parameter name="author" value="Mamphofore Ntabane" />
+<test name="JobApplication">
+	<parameter name="homeTitle" value="Home Page - iLAB" />
+	<parameter name="careerTitle" value="CAREERS - iLAB" />
+	<parameter name="name" value="Mamphofore" />
+	<parameter name="email" value="automationAssessment@iLABQuality.com" />
+<classes>
+    <class name="com.iLab.assessment.JobApplication">
+    </class>
+</classes>
+</test>
+</suite>
